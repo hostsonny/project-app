@@ -1,0 +1,207 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-28 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: visuals/app_settings.php:8
+msgid "Mobile App Settings"
+msgstr ""
+
+#: visuals/app_settings.php:40
+msgid "General Settings"
+msgstr ""
+
+#: visuals/app_settings.php:45
+msgid "App Home Page"
+msgstr ""
+
+#: visuals/app_settings.php:56
+msgid "App Theme"
+msgstr ""
+
+#: visuals/customizer_page.php:8
+msgid "Customize App Theme"
+msgstr ""
+
+#: visuals/customizer_page.php:47
+msgid ""
+"Looks like you put in some invalid information, please check all the input "
+"fields of the color pickers"
+msgstr ""
+
+#: visuals/customizer_page.php:56
+msgid "General Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:62
+msgid "Website background color"
+msgstr ""
+
+#: visuals/customizer_page.php:68
+msgid "Link colors"
+msgstr ""
+
+#: visuals/customizer_page.php:74
+msgid "Buttons background color"
+msgstr ""
+
+#: visuals/customizer_page.php:80
+msgid "Buttons color"
+msgstr ""
+
+#: visuals/customizer_page.php:87
+msgid "Header Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:93
+msgid "Header menu background color:"
+msgstr ""
+
+#: visuals/customizer_page.php:101
+msgid "Header menu font color:"
+msgstr ""
+
+#: visuals/customizer_page.php:108
+msgid "Navigation Menu Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:113
+msgid "Navigation menu background color"
+msgstr ""
+
+#: visuals/customizer_page.php:119
+msgid "Navigation menu items background color"
+msgstr ""
+
+#: visuals/customizer_page.php:125
+msgid "Navigation menu items border color"
+msgstr ""
+
+#: visuals/customizer_page.php:131
+msgid "Navigation menu font color"
+msgstr ""
+
+#: visuals/customizer_page.php:137
+msgid "Footer Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:142
+msgid "Footer background color:"
+msgstr ""
+
+#: visuals/customizer_page.php:149
+msgid "Footer font color:"
+msgstr ""
+
+#: visuals/customizer_page.php:155
+msgid "Page Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:160
+msgid "Page title background color"
+msgstr ""
+
+#: visuals/customizer_page.php:166
+msgid "Page title color"
+msgstr ""
+
+#: visuals/customizer_page.php:172
+msgid "Page font color"
+msgstr ""
+
+#: visuals/customizer_page.php:179
+msgid "Page backgroundcolor"
+msgstr ""
+
+#: visuals/customizer_page.php:186
+msgid "Post Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:192
+msgid "Post title background color"
+msgstr ""
+
+#: visuals/customizer_page.php:198
+msgid "Post title color"
+msgstr ""
+
+#: visuals/customizer_page.php:204
+msgid "Post font color"
+msgstr ""
+
+#: visuals/customizer_page.php:211
+msgid "Post backgroundcolor"
+msgstr ""
+
+#: visuals/customizer_page.php:218
+msgid "Comments font-color"
+msgstr ""
+
+#: visuals/customizer_page.php:225
+msgid "Comments background-color"
+msgstr ""
+
+#: visuals/customizer_page.php:232
+msgid "Comment form font-color"
+msgstr ""
+
+#: visuals/customizer_page.php:239
+msgid "Comment form background-color"
+msgstr ""
+
+#: visuals/customizer_page.php:249
+msgid "WooCommerce Colors"
+msgstr ""
+
+#: visuals/customizer_page.php:256
+msgid "WooCommerce products background color"
+msgstr ""
+
+#: visuals/customizer_page.php:263
+msgid "WooCommerce single product font color"
+msgstr ""
+
+#: visuals/customizer_page.php:270
+msgid "WooCommerce star rating color"
+msgstr ""
+
+#: visuals/customizer_page.php:277
+msgid "WooCommerce add to cart button color"
+msgstr ""
+
+#: visuals/customizer_page.php:284
+msgid "WooCommerce add to cart button font color"
+msgstr ""
+
+#: visuals/customizer_page.php:290
+msgid "WooCommerce sale flash background color"
+msgstr ""
+
+#: visuals/customizer_page.php:296
+msgid "WooCommerce sale flash font color"
+msgstr ""
+
+#. Name of the plugin
+msgid "Project App"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The mobile app plugin to sync your website's pages, posts and products with "
+"an app. Works with all plugins."
+msgstr ""
+
+#. Author of the plugin
+msgid "Sonny"
+msgstr ""
