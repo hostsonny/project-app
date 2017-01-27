@@ -3,7 +3,7 @@
 Plugin Name: Project App
 Plugin URI: https://hostsonny.com/wordpress-app/
 Description: The mobile app plugin to sync an app with your website's pages, posts and products. Works with all plugins.
-Version: 1.0
+Version: 1.5
 Author: HostSonny
 Author URI: https://hostsonny.com/
 Text Domain: project-app
@@ -67,20 +67,26 @@ function project_app_pluginsstart(){
     //checking if server has https
     if (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') {
     $htt = 'https://';
-}else{
+    }else{
     $htt = 'http://';    
     }
-
+    
     //checking the internet url to make ready for returning app theme
 $url = $htt . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-if (strpos($url,'?appkey=' . get_option('project_app_key')) !== false) {
+    //checking if not another query field is used
+    if(!strpos($url, '?')){
+        $mark = '?';
+    }else{
+        $mark = '&';
+    } 
+if (strpos($url, get_option('project_app_key')) !== false) {
     //redirecting to the app home page
-    $location = get_page_uri( get_option( 'Project_App_home', 0 )) . '?theme=app-theme';
-    echo "<script>window.location.assign('$location' )</script>";
+    $location = get_page_uri( get_option( 'Project_App_home', 0 )) . $mark . 'theme=app-theme';
+    //echo "<script>window.location.assign('$location' )</script>";
 }
 
     //checking if current url is app theme queried, if so, add filters
-if(strpos($url, '?theme=app-theme') && get_stylesheet() != get_option('Project_App_theme', get_stylesheet()) || strpos($_SERVER['HTTP_REFERER'], '?theme=app-theme')){
+if(strpos($url, 'theme=app-theme') && get_stylesheet() != get_option('Project_App_theme', get_stylesheet()) || strpos($_SERVER['HTTP_REFERER'], 'theme=app-theme')){
     //filtering stylkesheet and template for app theme
 add_filter( 'stylesheet', 'project_app_use_app_theme' );
 add_filter( 'template', 'project_app_use_app_theme' );   
@@ -91,12 +97,11 @@ function project_app_use_app_theme(){
     return get_option('Project_App_theme');
 }    
 //checking where the user is coming from (which url they were one in the previous page)
-    if(strpos($_SERVER['HTTP_REFERER'], '?theme=app-theme')){
+    if(strpos($_SERVER['HTTP_REFERER'], 'theme=app-theme')){
         //checking if the current url isn't already app theme queried
-        if(!strpos($url, '?theme=app-theme')){
+        if(!strpos($url, 'theme=app-theme')){           
         $data = array('theme'=>'app-theme');
-        $new_location =  $htt . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . '?' . http_build_query($data);
-        
+        $new_location =  $htt . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] . $mark . http_build_query($data);
         echo "<script>window.location.assign('$new_location' )</script>";
         }
     }
@@ -113,4 +118,3 @@ function project_app_enqueue_color_picker( $hook_suffix ) {
 }
 
 add_action( 'admin_enqueue_scripts', 'project_app_enqueue_color_picker' );
-
